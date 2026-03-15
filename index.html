@@ -94,21 +94,25 @@
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>You’re Amazing!😏 </h1>
-    <p>Just a little reminder that you're doing great. Take a deep breath🌝, smile🫵😁, and keep shining✨!</p>
-    <button onclick="showCustomMessage()">Click Me</button>
-    <audio id="bgMusic" src="Tu Na Samjhe ｜｜ Raja ｜｜ Prod. by @Maxx_Turnn.mp3"></audio>
-  </div>
+<div class="card">
+  <h1>You’re Amazing!😏 </h1>
+  <p>Just a little reminder that you're doing great.</p>
+  <button onclick="showCustomMessage()">Click Me</button>
+</div>
+
+<audio id="bgMusic" src="music.mp3"></audio>
 
   <div id="customMsg"> ..... </div>
 
   <script>
-    function showCustomMessage() {
-      const msg = document.getElementById("customMsg");
-      msg.style.display = "block";
-    }
-  </script>
+  function showCustomMessage() {
+    const msg = document.getElementById("customMsg");
+    msg.style.display = "block";
+
+    const music = document.getElementById("bgMusic");
+    music.play();
+  }
+</script>
 </body>
 </html>
 <!-- partial -->
