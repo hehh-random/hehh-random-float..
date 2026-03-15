@@ -6,4 +6,4 @@ function createHeart() {
   document.body.appendChild(heart);
   setTimeout(() => heart.remove(), 10000); // Remove after animation
 }
-setInterval(createHeart, 300); // Make a new heart every 300ms
+setInterval(createHeart, 100); // Make a new heart every 100ms
